@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assign1" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="Karanveer Singh"  />
+  <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+  <title>MMORPG</title>
+  <script src="quiz.js"></script> 
+</head>
+
+
+<body>
+<header>
+	<div class ="nav">
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="content.html">Topic</a></li>
+	<li><a href="quiz.html">Quiz</a></li>
+	<li><a href="enhancment.html">Enhancement</a></li>
+	
+	</ul>
+	<div class="logo">
+	<img src="images/logo1.png" alt="logo"/>
+	</div>
+	</div>
+	</header>
+
+
+<form method="post" id="regForm" action="result.html" >
+	  <fieldset>
+        <legend><h3> Your Details</h3> </legend>
+        <p><label for="Student_ID"> Student ID: </label>
+		     <input type="text" name= "Student_ID" id="Student_ID" maxlength="9" size="10"  pattern="\d*"/>	
+			
+		</p>
+	 
+		<p><label for="firstname"> First Name: </label>
+		     <input type="text" name="firstname" id="firstname" maxlength="25" size="10"/><span id="FirstNameError"></span>
+		</p>
+		<p><label for="lastname"> Last Name: </label>
+		     <input type="text" name="lastname" id="lastname" maxlength="25" size="10"/><span id="LastNameError"></span>
+			 </P>
+	  </fieldset>	
+	  
+	    <strong> Let's test your knowledge about MMORPG</strong>
+		<fieldset>
+		
+		<p> 1. What's a noob?</p>
+		<p> A special boss monster that has higher than average stats. 
+		     <input type="radio" name="Q1"  id="o1" value="a" />
+		</p>
+		<p>A new player 
+		     <input type="radio" name="Q1" id="o2" value="b" />
+		</p>
+		<p> A veteran player.
+		     <input type="radio" name="Q1" id="o3" value="c" />
+		</p>
+		<span id="q1"></span>
+		</fieldset>
+		<fieldset>`
+		<p><label for="Q2"> 2. How long does the average MMORPG take to beat</label>
+		     <select name="Q2" id="Q2">
+			   <option value="none"> Please Select </option>
+			   <option value="a"> 20-30 hours</option>
+			   <option value="b"> 40-80 hours</option>
+			   <option value="c"> 100-200 hours</option>
+			   <option value="d"> You can't beat an MMORPG</option>
+			 </select>
+		</p>
+		
+	  </fieldset>
+      <fieldset>
+		  <p> 3. You step up to a large, tower covered in strange runes and designs. As you push open the heavy wooden doors and enter the darkness within, you...</p>
+		  <p><label for="Option1"> Look for a good fight, or some type of cool obstacle to overcome. Either way, I want a challenge </label>
+		       <input type="checkbox" id="Option1"  name="Option1" value="Option1" />
+		  </p>
+		  <p><label for="Option2"> Start searching for treasure to steal. Why else would I have come here... There is treasure... right? </label>
+		       <input type="checkbox" id="Option2" name="Option2"  value="Option2"/>
+		  </p>
+		  <p><label for="Option3"> Break things, kill things, all the things that go in to a fun-filled day. </label>
+		       <input type="checkbox" id="Option3"  name="Option3"  value="Option3"/>
+	      </p>
+		  <p><label for="Option4"> Find a shadow of considerable darkness and wait for my chance to strike. </label>
+		       <input type="checkbox" id="Option4" name="Option4"  value="Option4"/>
+		  </p>
+		  <span id="opt"></span>
+		  </fieldset>
+		  <fieldset>
+	 
+	  <p><label for="Q4"> 4. What are the best MMORPG games you've played till now?</label> </p>
+	       <textarea id="Q4" name="Q4" rows="4" cols="40" placeholder="Mention the games here"></textarea>
+	  
+	  </fieldset>	
+	  <fieldset>
+	  <p><label for="Q5">5. Average time you've spent on MMORPG's?</label></p>
+	  <p> Hours:<input id="Q5" type="text" name="Q5" pattern="\d*" title="Only numbers"/></p>
+	  
+	 <p><input type= "submit" id="submit" value="Submit"/>
+	<input type= "reset" value="Reset Form"/></p>
+</fieldset>
+
+
+	</form>
+	<script>
+
+	
+</script>
+
+<footer>
+<p>&#169;<a href="www.swinburne.edu.au">Swinburne University of Technology</a> Markup By:<a href="mailto:101881934@student.swin.edu.au">Karanveer Singh</a></p>
+
+<p> Reference/images - Google/images  www.google.com/images</p>
+</footer>
+</body>
+</html>
+ 
