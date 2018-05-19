@@ -9,6 +9,7 @@
   <title>MMORPG</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="quiz.js"></script> 
+   
 </head>
 
 <body>
@@ -27,13 +28,9 @@
 	</div>
 	</header>
 
-	<i class="fa fa-user-circle-o" style="font-size:36px"></i>
-	<span><label for="name">User Id:</label><div id="getid" style="margin-left:120px;margin-top: -20px"></div></span>
-	<i class="fa fa-user" style="font-size:36px;"></i>
-	<label for="name">Username:<div style="margin-left: 120px; margin-top: -20px;"><div id="getname">Karanveer Singh</div><div id="lastNameS"></div></label></div>
-	<i class="fa fa-trophy" style="font-size:36px"></i>
-	<span ><label>Score:</label><div style="margin-left: 123px; margin-top: -20px;" id="getscore">0</div></span> 
-<form method="post" id="regForm" action="result.html" >
+	
+	
+     <form method="get" id="regForm" action="result.html" >
 	  <fieldset>
         <legend><h3> Your Details</h3> </legend>
         <p><label for="Student_ID"> Student ID: </label>
@@ -101,7 +98,7 @@
 	  <p><label for="Q5">5. Average time you've spent on MMORPG's?</label></p>
 	  <p> Hours:<input id="Q5" type="text" name="Q5" pattern="\d*" title="Only numbers"/></p>
 	  
-	 <p><input type= "submit" id="submit" value="Submit"/>
+	 <p><input type= "submit" id="submit" value="Submit" >
 	<input type= "reset" value="Reset Form"/></p>
      </fieldset>
 	</form>
