@@ -19,7 +19,8 @@
 		var lastName=document.getElementById("lastNameS");
 		lastName.innerHTML=lastname.value;
 	}
-
+	var score = 0;
+	var marks=0;
 	function validate(){
 		var errMsg = "";
 		var result = true;
@@ -35,7 +36,7 @@
 	var isOption4 = document.getElementById("Option4").checked;
 	var Q4 = document.getElementById("Q4"). value;
 	var Q5 = document.getElementById("Q5"). value;
-	var score = 0;
+	
 	
 	//var getValueO3=document.getElementById("o3").value;
 	
@@ -93,7 +94,7 @@
 	return getTime;
 	}	
 	function calcScore(){
-		var marks=0;
+		
 		var radio3 = document.getElementById("o3");
 		var isOption3 = document.getElementById("Option3");
 		var Q5 = document.getElementById("Q5"). value;
@@ -116,12 +117,13 @@
 
 		var getScore=document.getElementById("getscore");
 		getScore.innerHTML=marks;
-			
+			localStorage.setItem("getmarks",marks);
+			localStorage.setItem("Ques",Q5.value);
 	}
 
 
 
-	function storeBooking(Student_ID, firstname, lastname, radio1, radio2, radio3, isOption1, isOption2, isOption3, isOption4, Q4, Q5,score){ 	
+	function storeBooking(Student_ID, firstname, lastname, radio1, radio2, radio3, isOption1, isOption2, isOption3, isOption4, Q4, Q5){ 	
 	var Q1 = "";
 	if(radio1){
 		Q1 = "radio1";
@@ -163,7 +165,7 @@
 	localStorage.Q3 = document.getElementById("Q3").value
 	localStorage.Q4 = document.getElementById("Q4").value;
 	localStorage.Q5 = document.getElementById("Q5").value;
-   	
+
 	}
 
 	function prefill_form(){
